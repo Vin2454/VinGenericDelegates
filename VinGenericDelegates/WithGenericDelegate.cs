@@ -4,6 +4,8 @@ using System.Collections.Generic;
 namespace VinGenericDelegates
 {
     /// <summary>
+    /// E.g: If we read data from an external api and do some mapping in Repo layer into List and again iterate through for each row and do some other mapping
+    /// in Services layer. To avoid multiple inmemory iterations, we can pass service layer mapping function as a reference to Repo layer, so that mapping2 happens at the same time as mapping1
     /// Here are we are doing mapping in dataaccess only, while we are getting values and avoiding iteration in the dto mapper
     /// learn: https://stackoverflow.com/questions/20681960/use-of-generic-delegates
     /// </summary>
